@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () =>{
-    console.log(`Sever listening on http=//localhost:${PORT}`)
+    console.log(`Sever listening on http://localhost:${PORT}`)
 })
 
 
