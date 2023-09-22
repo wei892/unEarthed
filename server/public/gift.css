@@ -1,13 +1,19 @@
 #gift-content{
     display: flex;
-    gap: 10%;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
 
 .image-container{
     object-fit: cover;
-    max-width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+}
+
+#image{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
 
 }
