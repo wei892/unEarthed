@@ -1,0 +1,13 @@
+#gift-content{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container{
+    object-fit: cover;
+    max-width: 500px;
+    height: 500px;
+
+}

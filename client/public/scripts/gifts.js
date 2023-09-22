@@ -32,7 +32,7 @@ const renderGifts = async () => {
         const link = document.createElement('a')
         link.textContent = 'Read More >'
         link.setAttribute('role', 'button')
-        link.href = `/gift/${gift.id}`
+        link.href = `/gifts/${gift.id}`
         bottomContainer.appendChild(link)
   
         card.appendChild(topContainer)
@@ -49,10 +49,12 @@ const renderGifts = async () => {
   }
   
   const requestedUrl = window.location.href.split('/').pop()
+
+  renderGifts()
   
-  if (requestedUrl) {
-    window.location.href = '../404.html'
-  }
-  else {
-    renderGifts()
-  }
+  // if (requestedUrl) {
+  //   window.location.href = '../404.html'
+  // }
+  // else {
+  //   renderGifts()
+  // }
