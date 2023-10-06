@@ -4,6 +4,7 @@
 //imports express to connect the express server for project
 import express from 'express'
 import giftsRouter from './routes/gifts.js'
+import './config/dotenv.js'
 
 // initialize the express app
 const app = express()
