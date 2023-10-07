@@ -12,7 +12,7 @@ const renderGift = async () => {
       document.getElementById('image').src = gift.image
       document.getElementById('name').textContent = gift.name
       document.getElementById('submittedBy').textContent = 'Submitted by: ' + gift.submittedBy
-      document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricePoint
+      document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricepoint
       document.getElementById('audience').textContent = 'Great For: ' + gift.audience
       document.getElementById('description').textContent = gift.description
       document.title = `UnEarthed - ${gift.name}`

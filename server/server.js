@@ -5,14 +5,16 @@
 import express from 'express'
 import giftsRouter from './routes/gifts.js'
 import './config/dotenv.js'
+import cors from 'cors'
 
 // initialize the express app
 const app = express()
+app.use(cors())
 
 // used to serve static files
 // general syntax => app.use(<insert middleware>)
-app.use('/public', express.static('./public'))
-app.use('./scripts', express.static('./public/scripts'))
+app.use('/public', express('./public'))
+app.use('./scripts', express('./public/scripts'))
 app.use('/gifts', giftsRouter)
 
 // define route for the root url
